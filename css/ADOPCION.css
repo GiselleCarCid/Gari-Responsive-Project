@@ -1,0 +1,279 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    margin: 0 8.2px;
+    border-bottom: 4px solid #646549;
+    margin-left: 30px;
+}
+
+.logo img {
+    width: 66px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 80px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333 !important;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+nav ul li a[href="ADOPCION.html"] {
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Cuerpo*/
+
+main {
+    margin: 0 5em;
+}
+
+.informacion {
+    padding-top: 2em;
+}
+
+#phrase {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px !important;
+}
+
+.contenido h1 {
+    color: #3B1F0E;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.informacion h2, .contenido2 h2, .seccion-adopcion h2 {
+    color: #3B1F0B;
+    font-size: 30px !important;
+    font-weight: 900;
+}
+
+.informacion img {
+    margin-left: 83px;
+    margin-bottom: 90px;
+}
+
+/*Div 2*/
+
+.rsns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1em 0;
+}
+
+.r1, .r2, .r3 {
+    max-width: 250px;
+    min-height: 230px;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    padding: 1em;
+    color: #ffffff;
+}
+
+.r1 {
+    background-color: #646549;
+}
+
+.r2 {
+    background-color: #C2AB82;
+}
+
+.r3 {
+    background-color: #95754F;
+}
+
+/*Div 3*/
+#pc2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 21px !important;
+    padding-top: 1.5em;
+}
+
+.contenido2 p span {
+    font-weight: 1000 !important;
+}
+
+.requisitos {
+    padding-top: 2em;
+}
+
+.requisito {
+    display: flex;
+    flex-direction: row;
+    padding: 2em 0 2em 4em;
+}
+
+.requisitos h3 {
+    color: #95754F;
+}
+
+#icn1 {
+    max-width: 120px;
+    padding-right: 3em;
+}
+
+/*Div 4*/
+.opciones-adopcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2em 0;
+}
+
+.opcion {
+    max-width: 18em;
+    max-height: 170px;
+    border: 3px solid #BCAC83;
+    border-radius: 20px;
+    padding: 2em;
+    text-align: center;
+}
+
+/*Links*/
+a:link {
+    color: #333;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #656549;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 1em;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin: 0 2em;
+    }
+
+    .informacion img {
+        margin-left: 0;
+        margin-bottom: 1em;
+        max-width: 100%;
+    }
+
+    .rsns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .r1, .r2, .r3 {
+        max-width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .requisito {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #icn1 {
+        padding-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .opciones-adopcion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .opcion {
+        max-width: 100%;
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin: 0 1em;
+    }
+
+    .informacion img {
+        margin: 0 auto;
+    }
+
+    .r1, .r2, .r3 {
+        margin-bottom: 1em;
+    }
+
+    .opciones-adopcion {
+        margin: 0 auto;
+    }
+
+    .opcion {
+        max-width: 90%;
+        margin-bottom: 1em;
+    }
+}

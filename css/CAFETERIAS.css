@@ -1,0 +1,363 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    margin: 0 30px;
+    border-bottom: 4px solid #646549;
+}
+
+.logo img {
+    width: 66px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 80px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333 !important;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+nav ul li a[href="CAFETERIAS.html"] {
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Intro*/
+
+.main {
+    margin: 0 5em;
+}
+
+.intro {
+    padding-top: 3em;
+}
+
+.intro h1 {
+    font-size: 40px;
+    color: #381F0E;
+    font-weight: 900;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.p2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.p2 p {
+    text-align: justify;
+    padding-right: 5em;
+    padding-top: 1em;
+}
+
+#img1 {
+    max-width: 400px;
+}
+
+/*BOTONES*/
+.buttons-box {
+    display: flex;
+    flex-direction: row;
+    padding: 6em 4em 4em 4em;
+    justify-content: center; 
+}
+
+.button {
+    width: 305px;
+    height: 305px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+}
+
+.button:first-child {
+    background-color: #AC6533;
+}
+
+.button:last-child {
+    background-color: #646549;
+}
+
+.button .logobtn {
+    width: 200px;
+}
+
+.button .nav-link {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+.button .nav-link:hover {
+    color: #C2AA83;
+    transform: scale(1.05, 1.05);
+}
+
+/*Div 2*/
+#why h2 {
+    color: #381F0E;
+    font-size: 30px !important;
+    font-weight: 900;
+}
+
+#phrase {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px !important;
+}
+
+.impd1,
+.bend1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.impd2,
+.bend2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.timp {
+    font-weight: bold;
+    font-size: 30px;
+    color: #AC6533;
+}
+
+.imp {
+    text-align: justify;
+    padding-right: 4.5em;
+}
+
+#img2,
+#img4 {
+    max-width: 300px;
+    padding-right: 2em;
+}
+
+/*Div 3*/
+
+.socd1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.socd2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4.5em;
+}
+
+#img3 {
+    max-width: 300px;
+    padding-left: 2em;
+}
+
+.imp2 {
+    text-align: justify;
+}
+
+/*Div 4*/
+#cafes {
+    padding-top: 2em;
+}
+
+#cafes h2 {
+    color: #6A6A50;
+}
+
+.caf1,
+.caf2,
+.caf3,
+.caf4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.card {
+    max-width: 18em;
+    max-height: 170px;
+    border: 3px solid #BCAC83;
+    border-radius: 20px;
+    padding: 2em;
+    text-align: center;
+}
+
+.store {
+    color: #BCAC83;
+}
+
+#vega,
+#tresuno,
+#catfe,
+#mitsu {
+    max-width: 300px;
+}
+
+/*Links*/
+a:link {
+    color: #333;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #656549;
+    text-decoration: none;
+}
+
+.page {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .main {
+        margin: 0 2em;
+    }
+
+    .buttons-box {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .button {
+        display: flex;
+        width: 80%;
+        margin-bottom: 20px;
+        padding: auto;
+    }
+
+    .p1 {
+        flex-direction: column;
+    }
+
+    .impd1,
+    .bend1,
+    .socd1 {
+        flex-direction: column;
+        padding-bottom: 2em;
+    }
+
+    .impd2,
+    .bend2,
+    .socd2 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #img1,
+    #img2,
+    #img3,
+    #img4 {
+        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .caf1,
+    .caf2,
+    .caf3,
+    .caf4 {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro h1 {
+        font-size: 32px;
+    }
+
+    .intro p{
+        padding-right: 0;
+    padding-top: 0;
+    }
+
+    #why h2,
+    .timp {
+        font-size: 24px;
+    }
+
+    #phrase {
+        font-size: 18px;
+    }
+
+    .imp,
+    .imp2 {
+        padding-right: 0;
+    }
+
+    .buttons-box {
+        padding: 3em 1em;
+    }
+
+    .main {
+        margin: 0 1em;
+    }
+}

@@ -1,0 +1,134 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    margin: 0 30px;
+    border-bottom: 4px solid #646549;
+}
+
+.logo img {
+    width: 66px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 80px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333 !important;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+nav ul li a[href="INICIO.html"] {
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Bienvenida*/
+
+.bienvenida {
+    display: flex;
+    align-items: center;
+    margin: 0 5em;
+    padding-top: 2em;
+}
+
+.bienvenida img {
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+}
+
+.texto-bienvenida {
+    max-width: 800px;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 1.7;
+    margin-left: 30px;
+}
+
+.texto-bienvenida h1 {
+    font-size: 55px;
+    color: #3B1F0B;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .bienvenida {
+        flex-direction: column;
+        margin: 0 2em;
+    }
+
+    .texto-bienvenida {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto-bienvenida h1 {
+        font-size: 40px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 12px 15px;
+        margin: 0 15px;
+    }
+
+    .bienvenida {
+        margin: 0 1em;
+    }
+
+    .texto-bienvenida h1 {
+        font-size: 32px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
